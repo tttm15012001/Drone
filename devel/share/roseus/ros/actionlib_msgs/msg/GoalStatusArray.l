@@ -1,0 +1,1 @@
+/home/tttm/catkin_ws/devel/.private/actionlib_msgs/share/roseus/ros/actionlib_msgs/msg/GoalStatusArray.l

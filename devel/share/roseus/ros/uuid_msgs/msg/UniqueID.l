@@ -1,0 +1,1 @@
+/home/tttm/catkin_ws/devel/.private/uuid_msgs/share/roseus/ros/uuid_msgs/msg/UniqueID.l

@@ -1,0 +1,11 @@
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp: In function ‘int main(int, char**)’:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:44:28: error: ‘n’ was not declared in this scope; did you mean ‘yn’?
+   44 |  ros::Publisher move_pub = n.advertise<geometry_msgs::Twist>("/cmd_vel",1000);
+      |                            ^
+      |                            yn
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:44:60: error: expected primary-expression before ‘>’ token
+   44 |  ros::Publisher move_pub = n.advertise<geometry_msgs::Twist>("/cmd_vel",1000);
+      |                                                            ^
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/square.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

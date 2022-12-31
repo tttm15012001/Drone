@@ -1,0 +1,1 @@
+/home/tttm/catkin_ws/devel/.private/beginner/share/gennodejs/ros/beginner/srv/_index.js

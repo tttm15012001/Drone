@@ -1,0 +1,491 @@
+[35m[1mScanning dependencies of target set_wp[0m
+[35m[1mScanning dependencies of target square[0m
+[35m[1mScanning dependencies of target gnc_example[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/set_wp.dir/src/set_wp.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/gnc_example.dir/src/gnc_tutorial.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable /home/tttm/catkin_ws/devel/.private/iq_gnc/lib/iq_gnc/gnc_example[0m
+[ 83%] [32m[1mLinking CXX executable /home/tttm/catkin_ws/devel/.private/iq_gnc/lib/iq_gnc/set_wp[0m
+[ 83%] Built target set_wp
+[ 83%] Built target gnc_example
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp: In function ‘int main(int, char**)’:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:24: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘<unresolved overloaded function type>’)
+   82 |   ss << "hello world " << count;
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:108:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:108:36: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)’ {aka ‘std::basic_ostream<char>& (*)(std::basic_ostream<char>&)’}
+  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/ostream:117:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]’
+  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:117:32: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/ostream:127:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  127 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:127:30: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::ios_base& (*)(std::ios_base&)’
+  127 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/9/ostream:166:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  166 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:166:23: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘long int’
+  166 |       operator<<(long __n)
+      |                  ~~~~~^~~
+/usr/include/c++/9/ostream:170:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  170 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:170:32: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘long unsigned int’
+  170 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/ostream:174:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  174 |       operator<<(bool __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:174:23: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘bool’
+  174 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from /usr/include/c++/9/ostream:702,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/bits/ostream.tcc:91:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   91 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/ostream.tcc:92:22: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘short int’
+   92 |     operator<<(short __n)
+      |                ~~~~~~^~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:181:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  181 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:181:33: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘short unsigned int’
+  181 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/9/ostream:702,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/bits/ostream.tcc:105:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  105 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/ostream.tcc:106:20: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘int’
+  106 |     operator<<(int __n)
+      |                ~~~~^~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:192:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  192 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:192:31: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘unsigned int’
+  192 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/9/ostream:201:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  201 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:201:28: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘long long int’
+  201 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/9/ostream:205:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  205 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:205:37: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘long long unsigned int’
+  205 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/ostream:220:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  220 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:220:25: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘double’
+  220 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/9/ostream:224:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  224 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:224:24: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘float’
+  224 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+/usr/include/c++/9/ostream:232:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  232 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:232:30: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘long double’
+  232 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/9/ostream:245:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
+  245 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/9/ostream:245:30: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘const void*’
+  245 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/9/ostream:702,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/bits/ostream.tcc:119:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]’
+  119 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/ostream.tcc:120:34: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_ostream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  120 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /opt/ros/noetic/include/ros/node_handle.h:52,
+                 from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:14,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:207:29: note: candidate: ‘std::ostream& operator<<(std::ostream&, const XmlRpc::XmlRpcValue&)’
+  207 | XMLRPCPP_DECL std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+      |                             ^~~~~~~~
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:207:85: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘const XmlRpc::XmlRpcValue&’
+  207 | XMLRPCPP_DECL std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+In file included from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6419:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6419 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6419:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   couldn’t deduce template parameter ‘_Alloc’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/bits/ios_base.h:46,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/system_error:217:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)’
+  217 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/9/system_error:217:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘const std::error_code&’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:506:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT) [with _CharT = char; _Traits = std::char_traits<char>]’
+  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:506:62: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘char’
+  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |                                                       ~~~~~~~^~~
+/usr/include/c++/9/ostream:511:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)’
+  511 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:511:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘char’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:517:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)’
+  517 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:517:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘char’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:523:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)’
+  523 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:523:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘signed char’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:528:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)’
+  528 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:528:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘unsigned char’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:548:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>]’
+  548 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:548:69: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘const char*’
+  548 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |                                                       ~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/9/ostream:702,
+                 from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/bits/ostream.tcc:321:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)’
+  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘const char*’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:565:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’
+  565 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:565:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘const char*’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:578:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)’
+  578 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:578:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘const signed char*’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:583:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)’
+  583 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:583:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘const unsigned char*’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:691:5: note: candidate: ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)’
+  691 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/ostream:691:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   couldn’t deduce template parameter ‘_Tp’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/iomanip:79:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)’
+   79 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:79:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘std::_Resetiosflags’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/iomanip:109:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)’
+  109 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:109:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘std::_Setiosflags’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/iomanip:143:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)’
+  143 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:143:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘std::_Setbase’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/iomanip:178:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>) [with _CharT = char; _Traits = std::char_traits<char>]’
+  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:178:71: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘std::_Setfill<char>’
+  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |                                                      ~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/iomanip:208:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)’
+  208 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:208:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘std::_Setprecision’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/iomanip:238:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)’
+  238 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:238:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   cannot convert ‘std::count’ (type ‘<unresolved overloaded function type>’) to type ‘std::_Setw’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/iomanip:311:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_money<_MoneyT>)’
+  311 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:311:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   couldn’t deduce template parameter ‘_MoneyT’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/boost/math/policies/error_handling.hpp:12,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/iomanip:363:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_time<_CharT>) [with _CharT = char; _Traits = std::char_traits<char>]’
+  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/9/iomanip:363:72: note:   no known conversion for argument 2 from ‘<unresolved overloaded function type>’ to ‘std::_Put_time<char>’
+  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |                                                      ~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21,
+                 from /usr/include/boost/math/policies/error_handling.hpp:17,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/complex:552:5: note: candidate: ‘template<class _Tp, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::complex<_Tp>&)’
+  552 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/complex:552:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   couldn’t deduce template parameter ‘_Tp’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/boost/smart_ptr/shared_array.hpp:19,
+                 from /usr/include/boost/shared_array.hpp:17,
+                 from /opt/ros/noetic/include/ros/serialized_message.h:33,
+                 from /opt/ros/noetic/include/ros/serialization.h:36,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:66:5: note: candidate: ‘template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)’
+   66 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:66:5: note:   template argument deduction/substitution failed:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:82:27: note:   couldn’t deduce template parameter ‘_Tp’
+   82 |   ss << "hello world " << count;
+      |                           ^~~~~
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/square.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

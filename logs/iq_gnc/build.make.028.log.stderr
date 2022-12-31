@@ -1,0 +1,566 @@
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:14,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:2: note: in expansion of macro ‘ROS_INFO’
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:2: note: in expansion of macro ‘ROS_INFO’
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:2: note: in expansion of macro ‘ROS_INFO’
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |  ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp: In function ‘void set_destination(float, float, float, float)’:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  173 |  ROS_INFO('------');
+      |           ^~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/opt/ros/noetic/include/ros/console.h:351:176: warning: format not a string literal and no format arguments [-Wformat-security]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                                ^
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:2: note: in expansion of macro ‘ROS_INFO’
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:2: note: in expansion of macro ‘ROS_INFO’
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:2: note: in expansion of macro ‘ROS_INFO’
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+make[2]: *** [CMakeFiles/set_wp.dir/build.make:63: CMakeFiles/set_wp.dir/src/set_wp.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1619: CMakeFiles/set_wp.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:14,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:2: note: in expansion of macro ‘ROS_INFO’
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:2: note: in expansion of macro ‘ROS_INFO’
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:2: note: in expansion of macro ‘ROS_INFO’
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |  ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp: In function ‘void set_destination(float, float, float, float)’:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  173 |  ROS_INFO('------');
+      |           ^~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/opt/ros/noetic/include/ros/console.h:351:176: warning: format not a string literal and no format arguments [-Wformat-security]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                                ^
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:2: note: in expansion of macro ‘ROS_INFO’
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:2: note: in expansion of macro ‘ROS_INFO’
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:2: note: in expansion of macro ‘ROS_INFO’
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/square.dir/all] Error 2
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:14,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:2: note: in expansion of macro ‘ROS_INFO’
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:2: note: in expansion of macro ‘ROS_INFO’
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:130: warning: character constant too long for its type
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:2: note: in expansion of macro ‘ROS_INFO’
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |  ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp: In function ‘void set_destination(float, float, float, float)’:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  173 |  ROS_INFO('------');
+      |           ^~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/opt/ros/noetic/include/ros/console.h:351:176: warning: format not a string literal and no format arguments [-Wformat-security]
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                                ^
+/opt/ros/noetic/include/ros/console.h:354:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  354 |     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:2: note: in expansion of macro ‘ROS_INFO’
+  173 |  ROS_INFO('------');
+      |  ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:2: note: in expansion of macro ‘ROS_INFO’
+  174 |  ROS_INFO('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:2: note: in expansion of macro ‘ROS_INFO’
+  175 |  ROS_INFO('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:11: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           int
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                                                                                                     ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:2: note: in expansion of macro ‘ROS_INFO’
+  176 |  ROS_INFO('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |  ^~~~~~~~
+/opt/ros/noetic/include/ros/console.h:163:39: note:   initializing argument 7 of ‘void ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)’
+  163 |     const char* function, const char* fmt, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           ~~~~~~~~~~~~^~~
+make[2]: *** [CMakeFiles/gnc_example.dir/build.make:63: CMakeFiles/gnc_example.dir/src/gnc_tutorial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1646: CMakeFiles/gnc_example.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

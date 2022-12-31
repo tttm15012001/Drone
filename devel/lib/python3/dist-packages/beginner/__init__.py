@@ -1,0 +1,1 @@
+/home/tttm/catkin_ws/devel/.private/beginner/lib/python3/dist-packages/beginner/__init__.py

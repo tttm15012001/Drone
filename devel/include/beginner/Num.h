@@ -1,0 +1,1 @@
+/home/tttm/catkin_ws/devel/.private/beginner/include/beginner/Num.h

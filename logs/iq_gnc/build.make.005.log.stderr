@@ -1,0 +1,11 @@
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp: In member function ‘void moveDrone::forward()’:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:28:51: error: expected unqualified-id before ‘->’ token
+   28 |   set_destination(this->x, this->y, this->z, this.->psi);
+      |                                                   ^~
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp: In member function ‘void moveDrone::backward()’:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:34:51: error: expected unqualified-id before ‘->’ token
+   34 |   set_destination(this->x, this->y, this->z, this.->psi);
+      |                                                   ^~
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/square.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

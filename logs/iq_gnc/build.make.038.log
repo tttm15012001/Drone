@@ -1,0 +1,34 @@
+[35m[1mScanning dependencies of target nodeSubscribe2[0m
+[35m[1mScanning dependencies of target nodeSubscribe[0m
+[ 20%] Built target set_wp
+[ 40%] Built target square
+[ 60%] Built target gnc_example
+[ 70%] [32mBuilding CXX object CMakeFiles/nodeSubscribe.dir/src/nodeSubscribe.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/nodeSubscribe2.dir/src/nodeSubscribe2.cpp.o[0m
+/home/tttm/catkin_ws/src/iq_gnc/src/nodeSubscribe.cpp: In function ‘int main(int, char**)’:
+/home/tttm/catkin_ws/src/iq_gnc/src/nodeSubscribe.cpp:26:32: error: ‘n’ was not declared in this scope; did you mean ‘yn’?
+   26 |   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter2", 1000);
+      |                                ^
+      |                                yn
+/home/tttm/catkin_ws/src/iq_gnc/src/nodeSubscribe.cpp:26:60: error: expected primary-expression before ‘>’ token
+   26 |   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter2", 1000);
+      |                                                            ^
+/home/tttm/catkin_ws/src/iq_gnc/src/nodeSubscribe.cpp:30:27: error: ‘count’ was not declared in this scope; did you mean ‘std::count’?
+   30 |   ss << "hello world " << count;
+      |                           ^~~~~
+      |                           std::count
+In file included from /usr/include/c++/9/algorithm:62,
+                 from /usr/include/boost/math/tools/config.hpp:18,
+                 from /usr/include/boost/math/special_functions/round.hpp:13,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/nodeSubscribe.cpp:1:
+/usr/include/c++/9/bits/stl_algo.h:4113:5: note: ‘std::count’ declared here
+ 4113 |     count(_InputIterator __first, _InputIterator __last, const _Tp& __value)
+      |     ^~~~~
+make[2]: *** [CMakeFiles/nodeSubscribe.dir/build.make:63: CMakeFiles/nodeSubscribe.dir/src/nodeSubscribe.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:597: CMakeFiles/nodeSubscribe.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 90%] [32m[1mLinking CXX executable /home/tttm/catkin_ws/devel/.private/iq_gnc/lib/iq_gnc/nodeSubscribe2[0m
+[ 90%] Built target nodeSubscribe2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,260 @@
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:9: warning: character constant too long for its type
+  173 |  printf('------');
+      |         ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:9: warning: character constant too long for its type
+  174 |  printf('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:9: warning: character constant too long for its type
+  175 |  printf('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:9: warning: character constant too long for its type
+  176 |  printf('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp: In function ‘void set_destination(float, float, float, float)’:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  173 |  printf('------');
+      |         ^~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:17: warning: format not a string literal and no format arguments [-Wformat-security]
+  173 |  printf('------');
+      |                 ^
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  174 |  printf('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  175 |  printf('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  176 |  printf('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/set_wp.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+make[2]: *** [CMakeFiles/set_wp.dir/build.make:63: CMakeFiles/set_wp.dir/src/set_wp.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1619: CMakeFiles/set_wp.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:9: warning: character constant too long for its type
+  173 |  printf('------');
+      |         ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:9: warning: character constant too long for its type
+  174 |  printf('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:9: warning: character constant too long for its type
+  175 |  printf('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:9: warning: character constant too long for its type
+  176 |  printf('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp: In function ‘void set_destination(float, float, float, float)’:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  173 |  printf('------');
+      |         ^~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:17: warning: format not a string literal and no format arguments [-Wformat-security]
+  173 |  printf('------');
+      |                 ^
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  174 |  printf('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  175 |  printf('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  176 |  printf('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/square.dir/all] Error 2
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:9: warning: character constant too long for its type
+  173 |  printf('------');
+      |         ^~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:9: warning: character constant too long for its type
+  174 |  printf('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:9: warning: character constant too long for its type
+  175 |  printf('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:9: warning: character constant too long for its type
+  176 |  printf('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp: In function ‘void set_destination(float, float, float, float)’:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  173 |  printf('------');
+      |         ^~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:173:17: warning: format not a string literal and no format arguments [-Wformat-security]
+  173 |  printf('------');
+      |                 ^
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:174:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  174 |  printf('X: %f - %f - %f - %f', x, Xlocal, correction_vector_g.position.x, local_offset_pose_g.x);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:175:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  175 |  printf('Y: %f - %f - %f - %f', y, Ylocal, correction_vector_g.position.y, local_offset_pose_g.y);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:176:9: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  176 |  printf('Z: %f - %f - %f - %f', z, Zlocal, correction_vector_g.position.z, local_offset_pose_g.z);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:9,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/gnc_tutorial.cpp:1:
+/usr/include/stdio.h:332:43: note:   initializing argument 1 of ‘int printf(const char*, ...)’
+  332 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+make[2]: *** [CMakeFiles/gnc_example.dir/build.make:63: CMakeFiles/gnc_example.dir/src/gnc_tutorial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1646: CMakeFiles/gnc_example.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

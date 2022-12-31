@@ -1,0 +1,79 @@
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:34:2: error: expected ‘;’ after class definition
+   34 | }
+      |  ^
+      |  ;
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp: In constructor ‘moveDrone::moveDrone(int, int, int, float)’:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:13:8: error: request for member ‘x’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   13 |   this.x = x;
+      |        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:14:8: error: request for member ‘y’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   14 |   this.y = y;
+      |        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:15:8: error: request for member ‘z’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   15 |   this.z = z;
+      |        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:16:8: error: request for member ‘psi’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   16 |   this.psi = psi;
+      |        ^~~
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:17:3: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+   17 |   cout << "test" << endl;
+      |   ^~~~
+      |   std::cout
+In file included from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/iostream:61:18: note: ‘std::cout’ declared here
+   61 |   extern ostream cout;  /// Linked to standard output
+      |                  ^~~~
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:17:21: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+   17 |   cout << "test" << endl;
+      |                     ^~~~
+      |                     std::endl
+In file included from /usr/include/c++/9/iostream:39,
+                 from /opt/ros/noetic/include/ros/time.h:54,
+                 from /opt/ros/noetic/include/ros/serialization.h:34,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h:14,
+                 from /home/tttm/catkin_ws/devel/include/mavros_msgs/CommandTOL.h:11,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:1,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/usr/include/c++/9/ostream:599:5: note: ‘std::endl’ declared here
+  599 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp: In member function ‘void moveDrone::forward()’:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:25:8: error: request for member ‘x’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   25 |   this.x += 1;
+      |        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:26:24: error: request for member ‘x’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   26 |   set_destination(this.x, this.y, this.z, this.psi);
+      |                        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:26:32: error: request for member ‘y’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   26 |   set_destination(this.x, this.y, this.z, this.psi);
+      |                                ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:26:40: error: request for member ‘z’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   26 |   set_destination(this.x, this.y, this.z, this.psi);
+      |                                        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:26:48: error: request for member ‘psi’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   26 |   set_destination(this.x, this.y, this.z, this.psi);
+      |                                                ^~~
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp: In member function ‘void moveDrone::backward()’:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:31:8: error: request for member ‘x’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   31 |   this.x -= 1;
+      |        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:32:24: error: request for member ‘x’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   32 |   set_destination(this.x, this.y, this.z, this.psi);
+      |                        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:32:32: error: request for member ‘y’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   32 |   set_destination(this.x, this.y, this.z, this.psi);
+      |                                ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:32:40: error: request for member ‘z’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   32 |   set_destination(this.x, this.y, this.z, this.psi);
+      |                                        ^
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:32:48: error: request for member ‘psi’ in ‘(moveDrone*)this’, which is of pointer type ‘moveDrone*’ (maybe you meant to use ‘->’ ?)
+   32 |   set_destination(this.x, this.y, this.z, this.psi);
+      |                                                ^~~
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/square.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

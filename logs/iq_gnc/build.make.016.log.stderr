@@ -1,0 +1,21 @@
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp: In function ‘int main(int, char**)’:
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:18:2: error: ‘print’ was not declared in this scope
+   18 |  print('c');
+      |  ^~~~~
+/home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:18:2: note: suggested alternatives:
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:14,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/opt/ros/noetic/include/ros/console.h:165:22: note:   ‘ros::console::print’
+  165 | ROSCONSOLE_DECL void print(FilterBase* filter, void* logger, Level level,
+      |                      ^~~~~
+In file included from /opt/ros/noetic/include/ros/console.h:35,
+                 from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/tttm/catkin_ws/src/iq_gnc/include/gnc_functions.hpp:14,
+                 from /home/tttm/catkin_ws/src/iq_gnc/src/square.cpp:1:
+/opt/ros/noetic/include/ros/console_backend.h:73:30: note:   ‘ros::console::backend::print’
+   73 | ROSCONSOLE_BACKEND_DECL void print(void* logger_handle, ::ros::console::Level level, const char* str, const char* file, const char* function, int line);
+      |                              ^~~~~
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/square.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
