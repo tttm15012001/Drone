@@ -23,30 +23,30 @@ def callback(data):
         manageDrone.updateSignal(int(splitData[1][0:1]) - 2)    
     
 def handleDataFromServer(data):
-    numDroneNeedToTakeOffArr = data.data.split()
-    numDroneNeedToTakeOff = len(numDroneNeedToTakeOffArr)
-    manageDrone.requestXDroneTakeOff(numDroneNeedToTakeOff - 1)
-    dataSend = 'takeoff: '
-    for idx in range(len(manageDrone.requestTakeOff)):
-        dataSend += 'drone' + str(idx + 2) + str(manageDrone.requestTakeOff[idx]) + ' '
-    manageDrone.createData(dataSend)
-    manageDrone.needPublish = True
-    if manageDrone.state == LANDED:
-        drone.takeoff(4)
-        manageDrone.updateState('drone1 ', TAKING_OFF)
-    if(len(manageDrone.coordinatesAll) < 20):
-        coordinates_str = data.data
-        coordinates_arr = coordinates_str.split()   
-        queue = []
-        for pair in numDroneNeedToTakeOffArr:
-            data = pair.split(',')
-            newCoordinates = coordinates(int(data[0]) / 100, int("0"), int(data[1]) / 100)
-            queue.insert(len(queue), newCoordinates)
-        manageDrone.coordinatesAll.insert(0, queue)
+    if manageDrone.state != LANDING:
+        numDroneNeedToTakeOffArr = data.data.split()
+        numDroneNeedToTakeOff = len(numDroneNeedToTakeOffArr)
+        if manageDrone.state == LANDED:
+            drone.takeoff(4)
+            manageDrone.updateState('drone1 ', TAKING_OFF)
+            manageDrone.needPublish = True
+        elif manageDrone.checkEnough(numDroneNeedToTakeOff - 1) == False:
+            manageDrone.needPublish = True
+        manageDrone.requestXDroneTakeOff(numDroneNeedToTakeOff - 1)
+        if(len(manageDrone.coordinatesAll) < 20):
+            coordinates_str = data.data
+            coordinates_arr = coordinates_str.split()   
+            queue = []
+            for pair in numDroneNeedToTakeOffArr:
+                data = pair.split(',')
+                newCoordinates = coordinates(int(data[0]) / 100, int("0"), int(data[1]) / 100)
+                queue.insert(len(queue), newCoordinates)
+            manageDrone.coordinatesAll.insert(0, queue)
         
 def switch(topic, condition, countDownSleep, stay):
     if condition == 'landing':
         print('------ 0 Landing 0 ------')
+        print('------ 1 You can\'t public your image 1 ------')
         if drone.check_waypoint_reached():
             manageDrone.updateState('drone1 ', LANDED)
     elif condition == 'takingoff':
@@ -57,8 +57,18 @@ def switch(topic, condition, countDownSleep, stay):
             manageDrone.createData(dataSend)
             rospy.loginfo(manageDrone.dataSend)
             topic.publish(manageDrone.dataSend)
+            manageDrone.needPublish = False
     elif condition == 'takeoff':
-        if drone.check_waypoint_reached() and manageDrone.isReachAll():
+        if manageDrone.needPublish:
+            dataSend = 'takeoff: '
+            for idx in range(len(manageDrone.requestTakeOff)):
+                action = 'land' if manageDrone.requestTakeOff[idx] == False else 'true' 
+                dataSend += 'drone' + str(idx + 2) + str(action) + ' '
+            manageDrone.createData(dataSend)
+            rospy.loginfo(manageDrone.dataSend)
+            topic.publish(manageDrone.dataSend)
+            manageDrone.needPublish = False
+        elif drone.check_waypoint_reached() and manageDrone.isReachAll():
             if countDownSleep > 0:
                 if len(manageDrone.coordinatesAll) > 0:
                     manageDrone.unReachAll()

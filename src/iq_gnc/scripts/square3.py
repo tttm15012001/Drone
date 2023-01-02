@@ -14,7 +14,7 @@ def callback(data):
     global canReceive
     if canReceive == True or data.data.find('drone4: ') != -1:
         rospy.loginfo(rospy.get_caller_id() + " I heard %s", data.data)
-        if(data.data == 'land'):
+        if data.data == 'land' or data.data.find('drone4land') != -1:
             drone.land()
         else:
             analizeData = data.data.split(': ')
@@ -24,7 +24,7 @@ def callback(data):
                     manageDrone.updateState('drone3 ', TAKING_OFF)
             elif manageDrone.state == TAKEOFF and analizeData[0] == 'drone4':
                 coordinates_arr = analizeData[1].split()
-                drone.set_destination(x=float(coordinates_arr[0]), y=float("-6"), z=float(coordinates_arr[2]), psi=0)
+                drone.set_destination(x=float(coordinates_arr[0]), y=float("0"), z=float(coordinates_arr[2]), psi=0)
         canReceive = False
 
 def main():

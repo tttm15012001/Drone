@@ -2,7 +2,7 @@
 from iq_gnc.PrintColours import *
 import rospy
 from math import atan2, pow, sqrt, degrees, radians, sin, cos
-from geometry_msgs.msg import Pose, PoseStamped, Point, Quaternion
+from geometry_msgs.msg import Pose, PoseStamped, Point, Quaternion, PointStamped
 from nav_msgs.msg import Odometry
 from mavros_msgs.msg import State
 from mavros_msgs.srv import CommandTOL, CommandTOLRequest

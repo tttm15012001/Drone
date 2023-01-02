@@ -14,6 +14,7 @@ class manageDrones:
         self.dataSend = ''
         self.state = LANDED
         self.needPublish = False
+        self.numBefore = 0
     
     def unReachAll(self):
         for drone in self.dronesSignal:
@@ -43,13 +44,21 @@ class manageDrones:
     
     def requestXDroneTakeOff(self, X):
         count = 0
+        self.numBefore = X
         while count < X:
             self.requestTakeOff[count] = True
+            count += 1
+        while count < self.num:
+            self.requestTakeOff[count] = False
             count += 1
     
     def createData(self, data):
         self.dataSend = data
-    
+        
+    def checkEnough(self, num):
+        if num != self.numBefore:
+            return False
+        return True
     
     def updateState(self, key, value):
         print(key + self.state)
